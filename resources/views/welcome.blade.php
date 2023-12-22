@@ -9,9 +9,11 @@
         @vite(['resources/js/app.js', 'resources/css/app.css' ])
     </head>
     <body class="antialiased">
-        <div id="app">
-            <!-- Vue components will lay here -->
-        </div>
+            <div id="app">
+                <Index :props="{{ json_encode($user) }}"  />
+                <Welcome />
+                <!-- Vue components will lay here -->
+            </div>
         <script src="https://unpkg.com/vue@next"></script>
         <!-- Change it pre-production -->
     </body>

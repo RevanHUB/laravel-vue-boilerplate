@@ -1,8 +1,10 @@
+<script setup>
+</script>
+
 <template>
     <img src="src/images/vue.png" />
     <img src="src/images/laravel.png" />
-    <h1>Index is loaded!</h1>
-
+    <h1>Welcome is loaded!</h1>
 </template>
 
 <script>
