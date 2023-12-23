@@ -6,11 +6,20 @@
         <title>Laravel</title>
         <!-- Styles -->
         <link rel="stylesheet" href="{{URL::asset('src/fonts.css')}}">
-        @vite(['resources/js/app.js', 'resources/css/app.css' ])
+        @if(filter_var($_ENV['PRODUCTION'], FILTER_VALIDATE_BOOLEAN) == true)
+            <!-- Production resources goes here! -->
+            <!-- Deploy the server on XAMPP / NGINX TO SEE THE CONTENT -->
+            <link rel="stylesheet" href="{{URL::asset('build/assets/app-<cambiar>.css')}}">
+            <script src="{{URL::asset('build/assets/app-<cambiar>.js')}}" type="module"></script>
+        @else
+            <!-- Development resources goes here! -->
+            <!-- This will work only if we have executed the app with VITE -->
+            @vite(['resources/js/app.js', 'resources/css/app.css'])
+        @endif
     </head>
     <body class="antialiased">
             <div id="app">
-                <Index :props="{{ json_encode($user) }}"  />
+                <Index />
                 <Welcome />
                 <!-- Vue components will lay here -->
             </div>

@@ -1,21 +1,7 @@
-
-<script setup>
-
-    const props = defineProps({
-        props: Object
-    })
-
-    let user = props.props;
-    console.log(user);
-
-</script>
+<script setup></script>
 <template>
     <div id="root">
-        <Welcome />
-        <h3 style="margin:10px 0px">Props result: </h3>
-        <div v-for="(data) in user">
-            <p>{{data}}</p>
-        </div>
+        <Welcome/>
     </div>    
 </template>
 
