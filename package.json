@@ -3,7 +3,10 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "live": "vite",
+        "artisan": "php artisan serve",
+        "clear":"php artisan cache:clear & php artisan config:clear & php artisan config:cache",
+        "production": "php artisan souldoit:set-env PRODUCTION=true",
+        "development": "php artisan souldoit:set-env PRODUCTION=false",
         "build": "vite build"
     },
     "devDependencies": {

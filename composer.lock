@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "553081a1dd5313a5936958b505fd08af",
+    "content-hash": "33518c642fe84929a053446d08d2c597",
     "packages": [
         {
             "name": "brick/math",
@@ -3247,6 +3247,54 @@
                 }
             ],
             "time": "2023-11-08T05:53:05+00:00"
+        },
+        {
+            "name": "syamsoul/laravel-set-env",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/syamsoul/laravel-set-env.git",
+                "reference": "efa40f89cb106be2438d24a5c2850996effb9378"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/syamsoul/laravel-set-env/zipball/efa40f89cb106be2438d24a5c2850996effb9378",
+                "reference": "efa40f89cb106be2438d24a5c2850996effb9378",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^10.4",
+                "illuminate/support": "^10.4"
+            },
+            "type": "laravel-package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "SoulDoit\\SetEnv\\Providers\\SetEnvServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SoulDoit\\SetEnv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Syamsoul Azrien",
+                    "email": "syamsoulazrien.miat@gmail.com"
+                }
+            ],
+            "description": "Easily update or insert Laravel environment variable with Artisan command",
+            "support": {
+                "issues": "https://github.com/syamsoul/laravel-set-env/issues",
+                "source": "https://github.com/syamsoul/laravel-set-env/tree/1.0.6"
+            },
+            "time": "2023-11-18T18:24:27+00:00"
         },
         {
             "name": "symfony/console",
